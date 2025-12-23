@@ -1,4 +1,4 @@
-const SHEET_ID="YOUR_GOOGLE_SHEET_ID";
+const SHEET_ID="1SoYQnzvmNg3knETKuN-anGKwQssbG5oH5iaQqgM3oVE";
 const SHEET_TAB="1";
 const JSON_URL=`https://opensheet.elk.sh/${SHEET_ID}/${SHEET_TAB}`;
 const ML_JSON_URL="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/4d-ml-data-latest.json";
