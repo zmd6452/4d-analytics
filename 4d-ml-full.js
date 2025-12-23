@@ -20,8 +20,8 @@ const SOURCES = [
 ];
 
 const GITHUB = {
-  OWNER: "YOUR_GITHUB_USERNAME",
-  REPO: "YOUR_REPO_NAME",
+  OWNER: "zmd6452",
+  REPO: "4d-analytics",
   BRANCH: "main",
   JSON_PATH: "data/4d-ml-latest.json",
   CSV_PATH: "data/4d-history.csv",
