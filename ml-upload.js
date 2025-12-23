@@ -2,8 +2,8 @@ import fetch from 'node-fetch';
 import fs from 'fs';
 
 const GITHUB_TOKEN="YOUR_GITHUB_TOKEN";
-const REPO_OWNER="YOUR_USERNAME";
-const REPO_NAME="YOUR_REPO";
+const REPO_OWNER="zmd6452";
+const REPO_NAME="4d-analytics";
 const FILE_PATH="data/4d-ml-data-latest.json";
 
 const mlData=JSON.parse(fs.readFileSync("./data/4d-ml-data-latest.json","utf8"));
