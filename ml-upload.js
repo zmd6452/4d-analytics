@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 import fs from 'fs';
 
-const GITHUB_TOKEN="YOUR_GITHUB_TOKEN";
+const GITHUB_TOKEN="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";
 const REPO_OWNER="zmd6452";
 const REPO_NAME="4d-analytics";
 const FILE_PATH="data/4d-ml-data-latest.json";
