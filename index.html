@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4D Analytics Suite</title>
+<link rel="manifest" href="manifest.json">
+<style>
+body{font-family:sans-serif;padding:20px;max-width:1200px;margin:auto}
+input,button{padding:10px;margin:5px}
+ul{list-style:none;padding:0}
+li{margin:5px 0}
+table{border-collapse:collapse;width:100%;margin-top:20px}
+th,td{border:1px solid #ccc;padding:8px;text-align:center}
+.tab{display:none;}
+.tab.active{display:block;}
+.tabs button{padding:10px;margin:5px;cursor:pointer;}
+</style>
+</head>
+<body>
+<h1>Malaysia 4D Analytics Suite</h1>
+
+<div>
+<label>Required digits (comma separated): </label>
+<input id="requiredDigits" placeholder="e.g., 1,2">
+<label>Exclude digits (comma separated): </label>
+<input id="excludeDigits" placeholder="e.g., 3,4">
+<button onclick="runAnalysis()">Run Analysis</button>
+</div>
+
+<div class="tabs">
+<button onclick="showTab('freq')">Frequency Analysis</button>
+<button onclick="showTab('last')">Last Seen</button>
+<button onclick="showTab('prize')">Prize Distribution</button>
+<button onclick="showTab('candidates')">Top Picks</button>
+</div>
+
+<div id="freq" class="tab">
+<h2>Digit Frequency</h2>
+<table id="frequency"><tbody></tbody></table>
+</div>
+
+<div id="last" class="tab">
+<h2>Last Seen</h2>
+<table id="lastSeen"><tbody></tbody></table>
+</div>
+
+<div id="prize" class="tab">
+<h2>Prize Distribution</h2>
+<table id="prizeDist"><tbody></tbody></table>
+</div>
+
+<div id="candidates" class="tab">
+<h2>Top Candidate Picks</h2>
+<ul id="picks"></ul>
+</div>
+
+<script src="logic.js"></script>
+<script>
+function showTab(tabId){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById(tabId).classList.add('active');
+}
+showTab('freq'); // default
+</script>
+</body>
+</html>
